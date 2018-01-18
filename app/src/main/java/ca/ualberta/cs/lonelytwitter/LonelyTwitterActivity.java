@@ -53,7 +53,8 @@ public class LonelyTwitterActivity extends Activity {
 				alltweets.add(imptweet);
 				alltweets.add(normtweet);
 
-
+				// write it to the log , just to check outputs
+				Log.v("Test", "Log error 1");
 
 
 				try{
