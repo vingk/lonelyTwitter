@@ -46,4 +46,9 @@ public abstract class Tweet implements Tweetable{
     }
 
     public abstract boolean isImportant();
+
+    @Override
+    public String toString(){
+        return message;
+    }
 }
