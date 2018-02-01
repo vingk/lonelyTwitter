@@ -6,17 +6,41 @@ package ca.ualberta.cs.lonelytwitter;
 
 import java.util.Date;
 
+/**
+ * Represents an important tweet.
+ *
+ * @author James Cook
+ * @version 0.0
+ * @see NormalTweet
+ * @see Tweet
+ */
 public class ImportantTweet extends Tweet{
 
-    ImportantTweet(String message){
+    /**
+     * Construct an important tweet
+     *
+     * @param message the tweets message
+     */
+    public ImportantTweet(String message){
         super(message);
     }
 
-    ImportantTweet(String message, Date date){
+    /**
+     * Construct an important tweet
+     *
+     * @param message the tweets message
+     * @param date the tweets date
+     */
+    public ImportantTweet(String message, Date date){
        super(message,date);
     }
 
 
+    /**
+     * Returns true since tweet is important
+     *
+     * @return true
+     */
     @Override
     public boolean isImportant(){
         return true;
